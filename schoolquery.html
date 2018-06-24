@@ -1,0 +1,72 @@
+
+<!doctypehtml>
+<html>
+<head>
+<script>
+
+function thanks()
+{
+document.write("rishi")
+var x=document.getElementById("user").value;
+
+if (document.getElementById("user").value=="") 
+{
+   alert("invalid input")
+
+}
+else{
+document.write("thanks for contacting "+x)}
+var y=document.getElementById("mobno").value
+if(y==[^0-9])
+
+{
+document.write("your mobile no is"+y)
+}
+else
+{alert("invalid mob no")}
+
+}
+
+}
+</script>
+
+<body bgcolor="lightgrey">
+<form name="myform">
+<fieldset>
+<legend align="center">
+<center> <p>your details</center></P></legend>
+<p>name:</p>
+<input id="user" type="text" name="username" maxlength="30">
+<p>email:</p>
+<input type="text">
+<p>Mobile number:</p>
+<input type="text" id="mobno">
+</field set>
+<fieldset><legend align="center">
+<P> your review</p></legend>
+<p>how did you hear about us?
+<select>
+<option value="google"> google</option>
+<option value="newspaper">newspaper</option>
+<option value="alumni"> alumni</option>
+<option value="friends">frieds</option></br></select>
+
+<p> would you like to visit again? 
+<input type="radio" value="yes">yes
+<input type="radio" value="no">no
+<input type="radio" value="maybe">maybe
+comments:<br>
+<textarea name="queries" cols="60" rows="5">
+comments..
+</textarea>
+
+</p></fieldset>
+<p>sign me up for email updates</p><INPUT TYPE="checkbox">
+<input type="submit"  onclick="thanks()" value="submit">
+
+
+</form>
+
+</body>
+</html>
+ 

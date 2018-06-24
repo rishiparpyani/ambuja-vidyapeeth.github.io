@@ -1,0 +1,48 @@
+<html>
+<head>
+
+
+<script>
+function validForm()
+{
+	var symbol=document.forms["ValidForm"]["email"].value;
+	var AtTheRateSymbol=symbol.indexOf("@");
+	var Dot=symbol.lastIndexOf(".");
+	if (AtTheRateSymbol<1 || Dot<AtTheRateSymbol+2 || Dot+2>=symbol.length)
+	{
+	  alert("Not a valid e-mail address");
+  	  return false;
+  	}
+}
+</script>
+</head>
+
+<body bgcolor="pink">
+
+<center><font size="5" face=Jokerman  color=black >
+<h1>FEEDBACK FORM</h1></font>
+</center>
+
+
+
+
+
+</br>
+</br>
+</br>
+<center>
+<form name="ValidForm" action="home.html" onsubmit="return validForm();" method="post">
+<font size=4 color=black><b>
+Email: &nbsp;<input type="text" name="email"></b>
+
+
+
+<br><br><b><font size=5>Comments to us.</b><br>
+<textarea placeholder="Submit your views here" row=10 cols=75>
+</textarea><br><br></font>
+<input type="submit" value="Submit form">
+</form>
+</center>
+<br><br><br><br>
+</body>
+</html>
